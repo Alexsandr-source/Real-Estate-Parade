@@ -110,12 +110,15 @@
     display: block;
 }
 
-.header__item ul {   
+.header__item ul {
+    position: absolute; 
     display: none;
+
+    background-color: var(--light-color);
+
     border: 2px var(--accent-color) solid;
     border-radius: 4px;
-    position: absolute;
-
+    z-index: 999;
 }
 
 .header__link {
