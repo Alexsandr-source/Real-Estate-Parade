@@ -5,7 +5,7 @@
 }
 
 .button:hover {
-    background: #141414;
+    background: var(--light-color);
 }
 
 .button a {
@@ -36,9 +36,6 @@
     transform: rotate(-45deg);
 }
 
-
-
-
 /* Header */
 
 .header {
@@ -60,25 +57,83 @@
     justify-content: space-between;
 }
 
-.header__list {
+.menu__drop {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 1vw;
 }
 
-.header__item a{
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__interactive {
+    display: flex;
+    gap: 1vw;
+}
+
+.header__interactive img{
+    width: 40%;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__info a{
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 29px;
 
-    text-align: center;
-    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.header__info p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--text-color);
+
+    opacity: 0.8;
+}
+
+.header__item:hover> ul {   
+    display: block;
+}
+
+.header__item ul {   
+    display: none;
+    border: 2px var(--accent-color) solid;
+    border-radius: 4px;
+    position: absolute;
+
+}
+
+.header__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--text-color);
 
     transition: 0.4s;
 }
 
-.header__item a:hover{
+
+
+.header__:hover{
+    font-weight: 600;
     color: var(--accent-color);
 }
 
@@ -97,7 +152,7 @@
 .header__burger::after {
     content: '';
     position: absolute;
-    background-color: var(--accent-color);
+    background-color: var(--text-color);
     width: 30px;
     height: 3px;
     left: 10;

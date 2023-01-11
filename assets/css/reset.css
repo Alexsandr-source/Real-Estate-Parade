@@ -1,9 +1,8 @@
 :root {
-	--content-width:1296px;
-	--fluid-width:1920px;
-	--font-family: 'ReformaGrotesk';
-	--text-color: #FFFFFF;
-	--accent-color: #DB3138;
+	--font-family: 'Montserrat';
+	--text-color: #141414;
+	--light-color: #FCFCFC;
+	--accent-color: #A4D233;
 }
 
 /* Reset and base styles  */
@@ -24,7 +23,7 @@
 body {
 	color: var(--text-color);
 	font-family: var(--font-family) , sans-serif;
-	background-color: #141414;
+	background-color: #FCFCFC;
 }
 
 :focus,
@@ -127,4 +126,25 @@ legend {
 .container-fluid {
 	max-width: 1920px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+	.container-fluid {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container-fluid {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container-fluid {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
 }
