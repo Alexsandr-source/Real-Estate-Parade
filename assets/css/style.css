@@ -106,6 +106,10 @@
     opacity: 0.8;
 }
 
+.header__item  {
+    transition: 4s;
+}
+
 .header__item ul {
     position: absolute; 
     display: none;
