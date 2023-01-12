@@ -123,6 +123,7 @@
   line-height: 22px;
   color: var(--text-color);
   transition: 0.4s;
+  z-index: 999;
 }
 .header__link:hover {
   font-weight: 600;

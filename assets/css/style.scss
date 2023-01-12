@@ -162,7 +162,7 @@
         color: var(--text-color);
     
         transition: 0.4s;
-    
+        z-index: 999;
         &:hover{
             font-weight: 600;
             color: var(--accent-color);
