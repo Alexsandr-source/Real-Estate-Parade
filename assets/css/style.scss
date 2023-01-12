@@ -99,19 +99,28 @@
         }
     }
 
-    &__item> {
+    &__item {           
+        &:hover {
+            & > ul {
+                display: block;
+            }
+        }
 
-        & ul {
+        & li {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        & ul{
             display: none;
-            position: absolute; 
-            margin-top: 10px;
+            position: absolute;
             padding: 15px;
-            background-color: var(--light-color);
-            
             border: 2px var(--accent-color) solid;
-            border-radius: 4px;
 
-            &:before {
+            &::before {
                 content: '';
                 position: absolute; 
                 top: -10px;
@@ -124,16 +133,9 @@
                 transform: rotate(-45deg);
             }
         }
-
-        &:hover {
-            & ul {
-                display: block;
-            }
-        }
     } 
 
     &__link {
-
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
@@ -151,7 +153,6 @@
 }
 
 .menu {
-
     display: flex;
     justify-content: space-between;
     
@@ -160,6 +161,7 @@
         align-items: center;
         gap: 1vw;
     }
+
     &__burger {
         display: none;
         width: 3%;
