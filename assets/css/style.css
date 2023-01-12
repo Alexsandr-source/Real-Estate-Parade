@@ -89,6 +89,10 @@
   padding: 15px;
   border: 2px var(--accent-color) solid;
 }
+.header__item ul li {
+  max-width: 60%;
+  border-bottom: 2px solid rgba(78, 75, 72, 0.2);
+}
 .header__item ul::before {
   content: "";
   position: absolute;
@@ -102,6 +106,9 @@
   transform: rotate(-45deg);
 }
 .header__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;

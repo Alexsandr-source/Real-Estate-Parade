@@ -119,6 +119,11 @@
             position: absolute;
             padding: 15px;
             border: 2px var(--accent-color) solid;
+            
+            & li {
+                max-width: 60%;
+                border-bottom: 2px solid rgba(78, 75, 72, 0.2);
+            }
 
             &::before {
                 content: '';
@@ -136,6 +141,9 @@
     } 
 
     &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
