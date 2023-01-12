@@ -5,17 +5,24 @@
     border-radius: 4px;
 
     &:hover {
-
+        color: var(--accent-color);
         background: var(--light-color);
+        border-radius: 10px;
+        border: 2px solid var(--accent-color);
+    }
+
+    &:focus {
+        color: var(--accent-color);
+        background: var(--light-color);
+        border-radius: 10px;
+        border: 2px solid var(--accent-color);
     }
 
     & a {
-
-        font-family: var(--font-family);
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 140%;
+        font-size: 18px;
+        line-height: 22px;
     
         padding: 15px 20px;
     
@@ -64,25 +71,18 @@
         flex-direction: column;
     
         & a {
-
-            font-family: var(--font-family);
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
         
-            color: var(--text-color);
         }
     
         & p {
-
-            font-family: var(--font-family);
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-        
-            color: var(--text-color);
         
             opacity: 0.8;
         }
@@ -110,7 +110,7 @@
                     & .header__list {
                         display: flex;
                         flex-direction: column;
-                        gap: 5px;
+                        gap: 8px;
                     }
                 }
             }
@@ -230,37 +230,27 @@
 /* Intro */
 
 .intro {
-    background: url('../img/Rectangle\ 64.png');
-    background-size: 100%;
-    background-size: cover;
-    background-repeat: round;
 
     &__container {
         padding-top: 237px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         & button{
-            margin-top: 55px;
+            margin-top: 40px;
         }
     }
 
     &__title {
-        font-family: var(--font-family);
+        max-width: 78%;
         font-style: normal;
-        font-weight: 700;
-        font-size: 150px;
-        line-height: 125%;
-    
-        display: flex;
-        margin: 0 auto;
-    
-        color: var(--accent-color);
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
     }
 
     &__text {
-        font-family: var(--font-family);
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
@@ -269,6 +259,11 @@
         margin-top: 4%;
     
         text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 40px;
     }
 }
 
@@ -285,7 +280,6 @@
     & h2{
         margin-bottom: 2%;
     
-        font-family: var(--font-family);
         font-style: normal;
         font-weight: 600;
         font-size: 18px;

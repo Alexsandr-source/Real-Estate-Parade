@@ -11,6 +11,7 @@
 	margin: 0px;
 	border: none;
 	text-decoration: none;
+	font-family: var(--font-family);
 	color: var(--text-color);
 }
 
