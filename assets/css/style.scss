@@ -104,21 +104,15 @@
             & > ul {
                 display: block;
                 position: absolute;
-                &:hover {
-                    & ul {
-                        display: block;
+
+                & :hover {
+                    & .header__list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
                     }
                 }
             }
-        }
-
-        & ul ul {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            ga
-            left: 60%;
-            top: 0;
         }
 
         & li {
@@ -127,10 +121,6 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-        }
-
-        & ul {
-            display: none;
         }
 
         & > ul{
@@ -172,6 +162,27 @@
     
         transition: 0.4s;
     
+        &:hover{
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--text-color);
+    
+        transition: 0.4s;
+
         &:hover{
             font-weight: 600;
             color: var(--accent-color);

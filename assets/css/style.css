@@ -77,16 +77,10 @@
   display: block;
   position: absolute;
 }
-.header__item:hover > ul:hover ul {
-  display: block;
-}
-.header__item ul ul {
-  position: absolute;
+.header__item:hover > ul :hover .header__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  left: 60%;
-  top: 0;
+  gap: 5px;
 }
 .header__item li {
   font-family: var(--font-family);
@@ -94,9 +88,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-}
-.header__item ul {
-  display: none;
 }
 .header__item > ul {
   display: none;
@@ -133,6 +124,23 @@
   transition: 0.4s;
 }
 .header__link:hover {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+.header__list {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color);
+  transition: 0.4s;
+}
+.header__list:hover {
   font-weight: 600;
   color: var(--accent-color);
 }
