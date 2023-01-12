@@ -233,54 +233,7 @@
   z-index: -999;
 }
 
-/* Att */
-.container__att {
-  margin-top: 11%;
-  border-top: 1px #898989 solid;
-  border-bottom: 1px #898989 solid;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.container__att h2 {
-  margin-bottom: 2%;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-.container__att p {
-  margin-bottom: 2%;
-  font-family: var(--text-color);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
-.att__container {
-  padding: 4% 8%;
-}
-.att__container-full {
-  padding: 4% 8%;
-  border-left: 1px #898989 solid;
-  border-right: 1px #898989 solid;
-}
-
-.att__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Calculator */
 .telephone p {
   font-family: var(--font-family);
   font-style: normal;
