@@ -99,11 +99,26 @@
         }
     }
 
-    &__item {           
+    &__item {   
         &:hover {
             & > ul {
                 display: block;
+                position: absolute;
+                &:hover {
+                    & ul {
+                        display: block;
+                    }
+                }
             }
+        }
+
+        & ul ul {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            ga
+            left: 60%;
+            top: 0;
         }
 
         & li {
@@ -114,13 +129,17 @@
             line-height: 20px;
         }
 
-        & ul{
+        & ul {
+            display: none;
+        }
+
+        & > ul{
             display: none;
             position: absolute;
             padding: 15px;
             border: 2px var(--accent-color) solid;
             
-            & li {
+            & > li {
                 max-width: 60%;
                 border-bottom: 2px solid rgba(78, 75, 72, 0.2);
             }

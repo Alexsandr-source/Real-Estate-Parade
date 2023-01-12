@@ -75,6 +75,18 @@
 }
 .header__item:hover > ul {
   display: block;
+  position: absolute;
+}
+.header__item:hover > ul:hover ul {
+  display: block;
+}
+.header__item ul ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 60%;
+  top: 0;
 }
 .header__item li {
   font-family: var(--font-family);
@@ -85,15 +97,18 @@
 }
 .header__item ul {
   display: none;
+}
+.header__item > ul {
+  display: none;
   position: absolute;
   padding: 15px;
   border: 2px var(--accent-color) solid;
 }
-.header__item ul li {
+.header__item > ul > li {
   max-width: 60%;
   border-bottom: 2px solid rgba(78, 75, 72, 0.2);
 }
-.header__item ul::before {
+.header__item > ul::before {
   content: "";
   position: absolute;
   top: -10px;
