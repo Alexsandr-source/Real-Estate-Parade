@@ -185,6 +185,7 @@
 /* Intro */
 .intro__container {
   padding-top: 237px;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,6 +212,25 @@
 .intro__buttons {
   display: flex;
   gap: 40px;
+}
+.intro__images {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.intro__images-1 {
+  position: relative;
+  bottom: 300px;
+  max-height: 300px;
+  max-width: 40%;
+}
+.intro__images-2 {
+  position: relative;
+  bottom: 300px;
+  max-height: 800px;
+  max-width: 50%;
+  z-index: -999;
 }
 
 /* Att */
