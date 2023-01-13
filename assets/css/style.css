@@ -80,6 +80,7 @@
 .header__item:hover > ul {
   display: block;
   position: absolute;
+  background-color: var(--light-color);
 }
 .header__item:hover > ul :hover .header__list {
   display: flex;
@@ -98,9 +99,8 @@
 }
 .header__item > ul {
   display: none;
-  position: absolute;
-  width: 20%;
-  padding: 15px;
+  z-index: 99999;
+  padding: 15px 15px 15px 15px;
   border: 2px var(--accent-color) solid;
   border-radius: 10px;
 }
@@ -288,13 +288,12 @@
   padding: 10px;
 }
 .block__row > button {
-  max-width: 40px;
   border: 1px solid rgba(20, 20, 20, 0.6);
   background-color: var(--light-color);
   opacity: 0.6;
 }
 .block__row > button:hover {
-  background-color: #d3f091;
+  background-color: #d6f09a;
 }
 .block__row > button:hover a {
   color: var(--text-color);

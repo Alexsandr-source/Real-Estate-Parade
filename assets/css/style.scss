@@ -102,8 +102,8 @@
             & > ul {
                 display: block;
                 position: absolute;
+                background-color: var(--light-color);
                 
-
                 & :hover {
                     & .header__list {
                         display: flex;
@@ -127,9 +127,8 @@
 
         & > ul{
             display: none;
-            position: absolute;
-            width: 20%;
-            padding: 15px;
+            z-index: 99999;
+            padding: 15px 15px 15px 15px;
             border: 2px var(--accent-color) solid;
             border-radius: 10px;
             
@@ -184,10 +183,12 @@
         line-height: 22px;
         color: var(--text-color);
 
+
         & a:hover {
             font-weight: 600;
             color: var(--accent-color);
         }
+
         &:hover{
             font-weight: 600;
             color: var(--accent-color);
@@ -348,13 +349,12 @@
     }
 
     & > button {
-        max-width: 40px;
         border: 1px solid rgba(20, 20, 20, 0.6);
         background-color: var(--light-color);
         opacity: 0.6;
 
         &:hover {
-            background-color: #d3f091;
+            background-color: #d6f09a;
             & a {
                 color: var(--text-color);
             }
