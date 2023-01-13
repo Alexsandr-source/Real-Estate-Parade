@@ -110,7 +110,10 @@
                     & .header__list {
                         display: flex;
                         flex-direction: column;
-                        gap: 8px;
+                        gap: 5px;
+                    }
+                    & .header__image {
+                        display: none;
                     }
                 }
             }
@@ -127,11 +130,13 @@
         & > ul{
             display: none;
             position: absolute;
+            width: 20%;
             padding: 15px;
             border: 2px var(--accent-color) solid;
+            border-radius: 10px;
             
             & > li {
-                max-width: 60%;
+                max-width: 55%;
                 border-bottom: 2px solid rgba(78, 75, 72, 0.2);
             }
 
@@ -161,7 +166,6 @@
         line-height: 22px;
         color: var(--text-color);
     
-        transition: 0.4s;
         &:hover{
             font-weight: 600;
             color: var(--accent-color);
@@ -171,8 +175,9 @@
     &__list {
         display: none;
         position: absolute;
-        top: 10px;
-        right: 0;
+        top: 0px;
+        right: 0px;
+        padding: 14px;
 
         font-family: var(--font-family);
         font-style: normal;
@@ -180,9 +185,11 @@
         font-size: 18px;
         line-height: 22px;
         color: var(--text-color);
-    
-        transition: 0.4s;
 
+        & a:hover {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
         &:hover{
             font-weight: 600;
             color: var(--accent-color);
@@ -244,7 +251,7 @@
     }
 
     &__title {
-        max-width: 78%;
+        max-width: 84%;
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
@@ -275,6 +282,7 @@
 
         &-1 {
             position: relative;
+            left: -80px;
             bottom: 300px;
             max-height: 300px;
             max-width: 40%;
@@ -283,6 +291,7 @@
         &-2 {
             position: relative;
             bottom: 300px;
+            right: -78px;
             max-height: 800px;
             max-width: 50%;
             z-index: -999;

@@ -85,7 +85,10 @@
 .header__item:hover > ul :hover .header__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+}
+.header__item:hover > ul :hover .header__image {
+  display: none;
 }
 .header__item li {
   font-family: var(--font-family);
@@ -97,11 +100,13 @@
 .header__item > ul {
   display: none;
   position: absolute;
+  width: 20%;
   padding: 15px;
   border: 2px var(--accent-color) solid;
+  border-radius: 10px;
 }
 .header__item > ul > li {
-  max-width: 60%;
+  max-width: 55%;
   border-bottom: 2px solid rgba(78, 75, 72, 0.2);
 }
 .header__item > ul::before {
@@ -126,7 +131,6 @@
   font-size: 18px;
   line-height: 22px;
   color: var(--text-color);
-  transition: 0.4s;
 }
 .header__link:hover {
   font-weight: 600;
@@ -135,15 +139,19 @@
 .header__list {
   display: none;
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 0px;
+  right: 0px;
+  padding: 14px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: var(--text-color);
-  transition: 0.4s;
+}
+.header__list a:hover {
+  font-weight: 600;
+  color: var(--accent-color);
 }
 .header__list:hover {
   font-weight: 600;
@@ -195,7 +203,7 @@
   margin-top: 40px;
 }
 .intro__title {
-  max-width: 78%;
+  max-width: 84%;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -221,6 +229,7 @@
 }
 .intro__images-1 {
   position: relative;
+  left: -80px;
   bottom: 300px;
   max-height: 300px;
   max-width: 40%;
@@ -228,6 +237,7 @@
 .intro__images-2 {
   position: relative;
   bottom: 300px;
+  right: -78px;
   max-height: 800px;
   max-width: 50%;
   z-index: -999;
