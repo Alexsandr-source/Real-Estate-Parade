@@ -334,7 +334,7 @@
   align-items: center;
   border: 1px solid rgba(20, 20, 20, 0.6);
   background-color: var(--light-color);
-  transition: 0.6s;
+  transition: 0.9s;
 }
 .block__row-choice > button a {
   color: var(--text-color);
@@ -345,6 +345,9 @@
   line-height: 20px;
   padding: 10px 20px 10px 10px;
   text-transform: none;
+}
+.block__row-choice > button img {
+  margin-right: 10px;
 }
 .block__row-choice > button:hover a {
   color: var(--text-color);
