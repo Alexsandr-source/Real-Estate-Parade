@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button {
   background: var(--accent-color);
   transition: 0.4s;
@@ -24,6 +25,25 @@
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
+}
+.button-choice {
+  background-color: var(--light-color);
+}
+.button-choice > button {
+  border: 1px solid rgba(20, 20, 20, 0.6);
+  background-color: var(--light-color);
+}
+.button-choice > button:hover a {
+  color: var(--text-color);
+}
+.button-choice > button a {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  text-transform: none;
 }
 
 .decors {
@@ -292,7 +312,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 200px;
 }
 .content__block p {
   font-family: var(--font-family);
@@ -307,12 +326,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.block__row input {
-  max-width: 140px;
-  border: 1px solid rgba(20, 20, 20, 0.6);
-  border-radius: 10px;
-  padding: 10px;
 }
 .block__row > button {
   border: 1px solid rgba(20, 20, 20, 0.6);
@@ -333,6 +346,39 @@
   font-size: 20px;
   line-height: 24px;
   padding: 7px;
+}
+.block__row-choice {
+  background-color: var(--light-color);
+}
+.block__row-choice > button {
+  border: 1px solid rgba(20, 20, 20, 0.6);
+  background-color: var(--light-color);
+}
+.block__row-choice > button:hover a {
+  color: var(--text-color);
+}
+.block__row-choice > button a {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  text-transform: none;
+}
+.block__row input {
+  max-width: 140px;
+  border: 1px solid rgba(20, 20, 20, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.price__block input {
+  max-width: 14ф0px;
+}
+
+.area__block input {
+  max-width: 110px;
 }
 
 .telephone p {
