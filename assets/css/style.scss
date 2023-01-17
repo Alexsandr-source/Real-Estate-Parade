@@ -30,29 +30,6 @@
         text-transform: uppercase;
     }
     
-    &-choice {
-        background-color: var(--light-color);
-        & > button {
-            border: 1px solid rgba(20, 20, 20, 0.6);
-            background-color: var(--light-color);
-            
-            &:hover {
-                & a {
-                    color: var(--text-color);
-                }
-            }
-            
-            & a {
-                font-family: var(--font-family);
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                padding:  10px;
-                text-transform: none;
-            }
-        }
-    }
 }
 
 .decors {
@@ -328,10 +305,6 @@
 
 .calculator {
 
-    &__button {
-
-    }
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -415,7 +388,6 @@
     & > button {
         border: 1px solid rgba(20, 20, 20, 0.6);
         background-color: var(--light-color);
-        opacity: 0.6;
         
         &:hover {
             border: 1px solid rgba(20, 20, 20, 0.2);
@@ -438,29 +410,37 @@
     &-choice {
         background-color: var(--light-color);
         & > button {
+            display: flex;
+            align-items: center;
             border: 1px solid rgba(20, 20, 20, 0.6);
             background-color: var(--light-color);
-            
-            &:hover {
-                & a {
-                    color: var(--text-color);
-                }
-            }
-            
+            transition: 0.6s;
+
             & a {
+                color: var(--text-color);
                 font-family: var(--font-family);
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
-                padding:  10px;
+                padding:  10px 20px 10px 10px;
                 text-transform: none;
             }
+            
+            &:hover {
+                & a {
+                    color: var(--text-color);
+                }
+
+                & img {
+                    transform: rotate(90deg);
+                }
+            }
+            
         }
     }
 
     & input {
-        max-width: 140px;
         border: 1px solid rgba(20, 20, 20, 0.6);
         border-radius: 10px;
         padding: 10px;
@@ -470,7 +450,7 @@
 
 .price__block {
     & input {
-        max-width: 14ф0px;
+        max-width: 140px;
     }
 }
 
