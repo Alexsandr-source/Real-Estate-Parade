@@ -349,12 +349,11 @@
   gap: 20px;
 }
 .calculator__footer-row > button {
-  width: 60%;
+  width: 270px;
 }
 .calculator__footer-row > button > a {
   display: flex;
   gap: 10px;
-  padding: 10px;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -363,6 +362,7 @@
   color: var(--text-color);
 }
 .calculator__footer-row input:nth-child(odd) {
+  width: 40%;
   border: 1px solid rgba(20, 20, 20, 0.6);
   border-radius: 10px;
   padding: 10px;
