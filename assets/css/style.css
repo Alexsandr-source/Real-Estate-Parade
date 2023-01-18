@@ -317,20 +317,15 @@
 .calculator__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .calculator__header {
-  position: relative;
   display: flex;
   gap: 40px;
   margin-bottom: 30px;
 }
-.calculator__header li {
-  padding: 10px;
-  border-radius: 10px;
-}
 .calculator__header li :hover {
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
+  padding-bottom: 100px;
 }
 .calculator__header li a {
   padding: 10px;
@@ -339,7 +334,11 @@
 .calculator__content {
   display: flex;
   flex-direction: column;
+  padding: 40px 20px;
+  border: 2px var(--accent-color) solid;
+  border-radius: 10px;
   gap: 50px;
+  background-color: var(--light-color);
 }
 .calculator__footer {
   display: flex;
@@ -349,11 +348,19 @@
 .calculator__footer-row {
   gap: 20px;
 }
+.calculator__footer-row > button {
+  width: 60%;
+}
 .calculator__footer-row > button > a {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-family: var(--font-family);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: var(--text-color);
 }
 .calculator__footer-row input:nth-child(odd) {
   border: 1px solid rgba(20, 20, 20, 0.6);
