@@ -107,7 +107,7 @@
                 
                 & :hover {
                     & .header__list {
-                        display: flex;
+                        display: block;
                         flex-direction: column;
                         gap: 5px;
                     }
@@ -128,14 +128,23 @@
 
         & > ul{
             display: none;
-            z-index: 99999;
             padding: 15px 15px 15px 15px;
             border: 2px var(--accent-color) solid;
             border-radius: 10px;
             
             & > li {
                 max-width: 55%;
+                display: flex;
                 border-bottom: 2px solid rgba(78, 75, 72, 0.2);
+
+                & > p {
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                
+                }
             }
 
             &::before {
@@ -154,6 +163,7 @@
     } 
 
     &__link {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -164,18 +174,26 @@
         line-height: 22px;
         color: var(--text-color);
     
-        &:hover{
-            font-weight: 600;
-            color: var(--accent-color);
-        }
+            & P {
+                font-family: var(--font-family);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+
+                &:hover {
+                    font-weight: 600;
+                    color: var(--accent-color);
+                }
+            }
     }
 
     &__list {
         display: none;
         position: absolute;
-        top: 0px;
-        right: 0px;
-        padding: 14px;
+        top: 0;
+        right: 0;
+        padding: 20px;
 
         font-family: var(--font-family);
         font-style: normal;
@@ -183,17 +201,6 @@
         font-size: 18px;
         line-height: 22px;
         color: var(--text-color);
-
-
-        & a:hover {
-            font-weight: 600;
-            color: var(--accent-color);
-        }
-
-        &:hover{
-            font-weight: 600;
-            color: var(--accent-color);
-        }
     }
 }
 
@@ -301,10 +308,88 @@
 
 }
 
+.block__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    & > button {
+        border: 1px solid rgba(20, 20, 20, 0.6);
+        background-color: var(--light-color);
+        border-radius: 10px;
+        
+        &:hover {
+            border: 1px solid rgba(20, 20, 20, 0.2);
+            background-color: #d6f09a;
+            & a {
+                color: var(--text-color);
+            }
+        }
+        
+        & a {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 7px;
+        }
+    }
+    
+    &-choice {
+        background-color: var(--light-color);
+        & > button {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(20, 20, 20, 0.6);
+            background-color: var(--light-color);
+            transition: 0.9s;
+            
+            & a {
+                color: var(--text-color);
+                font-family: var(--font-family);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                padding:  10px 20px 10px 10px;
+                text-transform: none;
+            }
+            
+            & img {
+                margin-right: 10px;
+            }
+            
+            &:hover {
+                & a {
+                    color: var(--text-color);
+                }
+                
+                & img {
+                    transform: rotate(90deg);
+                }
+            }
+            
+        }
+    }
+    
+    &-location {
+        width: 50%;
+    }
+    
+    & input {
+        border: 1px solid rgba(20, 20, 20, 0.6);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+}
+
 /* Calculator */
 
 .calculator {
-
+    
     &__container {
         display: flex;
         flex-direction: column;
@@ -342,15 +427,25 @@
         display: flex;
         justify-content: space-between;
         max-width: 100%;
-    
-        &__row {
+
+        &-row {
             gap: 20px;
-    
+
+            & > button {
+                & > a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
             & input:nth-child(odd) {
                 border: 1px solid rgba(20, 20, 20, 0.6);
                 border-radius: 10px;
                 padding: 10px;
             }
+
         }
 
     }
@@ -379,78 +474,6 @@
 }    
 
 
-.block__row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    
-    & > button {
-        border: 1px solid rgba(20, 20, 20, 0.6);
-        background-color: var(--light-color);
-        
-        &:hover {
-            border: 1px solid rgba(20, 20, 20, 0.2);
-            background-color: #d6f09a;
-            & a {
-                color: var(--text-color);
-            }
-        }
-        
-        & a {
-            font-family: var(--font-family);
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
-            padding: 7px;
-        }
-    }
-
-    &-choice {
-        background-color: var(--light-color);
-        & > button {
-            display: flex;
-            align-items: center;
-            border: 1px solid rgba(20, 20, 20, 0.6);
-            background-color: var(--light-color);
-            transition: 0.9s;
-
-            & a {
-                color: var(--text-color);
-                font-family: var(--font-family);
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                padding:  10px 20px 10px 10px;
-                text-transform: none;
-            }
-            
-            & img {
-                margin-right: 10px;
-            }
-
-            &:hover {
-                & a {
-                    color: var(--text-color);
-                }
-
-                & img {
-                    transform: rotate(90deg);
-                }
-            }
-            
-        }
-    }
-
-    & input {
-        border: 1px solid rgba(20, 20, 20, 0.6);
-        border-radius: 10px;
-        padding: 10px;
-    }
-
-}
 
 .price__block {
     & input {
