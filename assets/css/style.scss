@@ -540,6 +540,27 @@
         }
     }
 
+    &__block {
+        max-width: 300px;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+
+        & h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        &-img {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
 }
 
 

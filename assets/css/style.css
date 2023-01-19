@@ -423,6 +423,23 @@
   font-size: 20px;
   line-height: 24px;
 }
+.offer__block {
+  max-width: 300px;
+}
+.offer__price {
+  display: flex;
+  justify-content: space-between;
+}
+.offer__price h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+}
+.offer__price-img {
+  display: flex;
+  gap: 10px;
+}
 
 /* Car */
 .car__container {
