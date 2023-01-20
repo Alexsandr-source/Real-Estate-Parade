@@ -1,3 +1,14 @@
+/* SVG поменять цвет у svg "Group 2" и "Like__Heart"*/
+
+.all-svg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	&:hover path {
+		fill: var(--accent-color);
+	}
+}
+
 // Content
 
 .content {
