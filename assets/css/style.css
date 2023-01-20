@@ -1,12 +1,11 @@
 @charset "UTF-8";
 /* SVG поменять цвет у svg "Group 2" и "Like__Heart"*/
-.all-svg {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.all-svg:hover path {
+.heart-svg:hover path {
   fill: var(--accent-color);
+}
+
+.graph-svg:hover path {
+  stroke: var(--accent-color);
 }
 
 .content__title {
