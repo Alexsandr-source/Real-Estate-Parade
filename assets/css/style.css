@@ -434,6 +434,9 @@
   line-height: 24px;
 }
 .offer__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 360px;
   position: relative;
 }
@@ -469,6 +472,13 @@
 .offer__price-img {
   display: flex;
   gap: 10px;
+}
+.offer__price-sub {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(20, 20, 20, 0.4);
 }
 
 /* Car */
