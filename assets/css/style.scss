@@ -1,15 +1,15 @@
 /* SVG поменять цвет у svg "Group 2" и "Like__Heart"*/
 
 .heart-svg {
-	&:hover path {
-		fill: var(--accent-color);
-	}
+    &:hover path {
+        fill: var(--accent-color);
+    }
 }
 
 .graph-svg {
-	&:hover path {
-		stroke: var(--accent-color);
-	}
+    &:hover path {
+        stroke: var(--accent-color);
+    }
 }
 
 // Content
@@ -19,6 +19,7 @@
         display: flex;
         justify-content: space-between;
     }
+
     &__block {
         display: flex;
         flex-direction: column;
@@ -32,7 +33,7 @@
             line-height: 24px;
         }
     }
-}    
+}
 
 // Button
 
@@ -59,15 +60,15 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-    
+
         padding: 15px 20px;
-    
+
         display: flex;
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
     }
-    
+
 }
 
 /* Header */
@@ -75,12 +76,12 @@
 .header {
     margin-top: 40px;
     width: 100%;
-    
+
     &__container {
 
         margin: auto 4%;
     }
-    
+
     &__menu {
 
         display: flex;
@@ -91,21 +92,21 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-    
+
         & a {
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
-        
+
         }
-    
+
         & p {
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-        
+
             opacity: 0.8;
         }
     }
@@ -114,8 +115,8 @@
 
         display: flex;
         gap: 1vw;
-    
-        & img{
+
+        & img {
             width: 30px;
             cursor: pointer;
         }
@@ -123,17 +124,18 @@
 
     &__item {
         &:hover {
-            & > ul {
+            &>ul {
                 display: block;
                 position: absolute;
                 background-color: var(--light-color);
-                
+
                 & :hover {
                     & .header__list {
                         display: block;
                         flex-direction: column;
                         gap: 5px;
                     }
+
                     & .header__image {
                         display: none;
                     }
@@ -149,41 +151,41 @@
             line-height: 20px;
         }
 
-        & > ul{
+        &>ul {
             display: none;
             padding: 15px 15px 15px 15px;
             border: 2px var(--accent-color) solid;
             border-radius: 10px;
-            
-            & > li {
+
+            &>li {
                 max-width: 55%;
                 display: flex;
                 border-bottom: 2px solid rgba(78, 75, 72, 0.2);
 
-                & > p {
+                &>p {
                     font-family: var(--font-family);
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 20px;
-                
+
                 }
             }
 
             &::before {
                 content: '';
-                position: absolute; 
+                position: absolute;
                 top: -10px;
                 left: 30px;
                 width: 20px;
                 height: 20px;
-                background-color:var(--light-color);
+                background-color: var(--light-color);
                 border-top: 2px var(--accent-color) solid;
                 border-right: 2px var(--accent-color) solid;
                 transform: rotate(-45deg);
             }
         }
-    } 
+    }
 
     &__link {
         width: 100%;
@@ -196,19 +198,19 @@
         font-size: 18px;
         line-height: 22px;
         color: var(--text-color);
-    
-            & P {
-                font-family: var(--font-family);
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 22px;
 
-                &:hover {
-                    font-weight: 600;
-                    color: var(--accent-color);
-                }
+        & P {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+
+            &:hover {
+                font-weight: 600;
+                color: var(--accent-color);
             }
+        }
     }
 
     &__list {
@@ -230,7 +232,7 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    
+
     &__drop {
         display: flex;
         align-items: center;
@@ -244,7 +246,7 @@
         height: 20px;
         top: 0;
         cursor: pointer;
-    
+
         & span,
         &::before,
         &::after {
@@ -257,6 +259,7 @@
             right: 0;
             transition: 0.4s;
         }
+
         & span {
             right: 0;
             top: 8.4px;
@@ -275,7 +278,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        & button{
+
+        & button {
             margin-top: 40px;
         }
     }
@@ -293,9 +297,9 @@
         font-weight: 500;
         font-size: 40px;
         line-height: 120%;
-    
+
         margin-top: 4%;
-    
+
         text-align: center;
     }
 
@@ -317,7 +321,7 @@
             max-height: 300px;
             max-width: 40%;
         }
-        
+
         &-2 {
             position: relative;
             bottom: 300px;
@@ -336,20 +340,21 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
-    & > button {
+
+    &>button {
         border: 1px solid rgba(20, 20, 20, 0.6);
         background-color: var(--light-color);
         border-radius: 10px;
-        
+
         &:hover {
             border: 1px solid rgba(20, 20, 20, 0.2);
             background-color: #d6f09a;
+
             & a {
                 color: var(--text-color);
             }
         }
-        
+
         & a {
             font-family: var(--font-family);
             font-style: normal;
@@ -359,16 +364,17 @@
             padding: 7px;
         }
     }
-    
+
     &-choice {
         background-color: var(--light-color);
-        & > button {
+
+        &>button {
             display: flex;
             align-items: center;
             border: 1px solid rgba(20, 20, 20, 0.6);
             background-color: var(--light-color);
             transition: 0.9s;
-            
+
             & a {
                 color: var(--text-color);
                 font-family: var(--font-family);
@@ -376,43 +382,43 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
-                padding:  10px 20px 10px 10px;
+                padding: 10px 20px 10px 10px;
                 text-transform: none;
             }
-            
+
             & img {
                 margin-right: 10px;
             }
-            
+
             &:hover {
                 & a {
                     color: var(--text-color);
                 }
-                
+
                 & img {
                     transform: rotate(90deg);
                 }
             }
-            
+
         }
     }
-    
+
     &-location {
         width: 50%;
     }
-    
+
     & input {
         border: 1px solid rgba(20, 20, 20, 0.6);
         border-radius: 10px;
         padding: 10px;
     }
-    
+
 }
 
 /* Calculator */
 
 .calculator {
-    
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -425,7 +431,7 @@
         width: 100%;
         gap: 40px;
         margin-bottom: 30px;
-    
+
         & li {
             & :hover {
                 border: 2px solid var(--accent-color);
@@ -442,7 +448,7 @@
     &__content {
         display: flex;
         flex-direction: column;
-        padding:40px 20px;
+        padding: 40px 20px;
         border: 2px var(--accent-color) solid;
         border-radius: 10px;
         gap: 50px;
@@ -457,13 +463,13 @@
         &-row {
             gap: 20px;
 
-            & > button {
+            &>button {
                 width: 270px;
 
-                & > a {
+                &>a {
                     display: flex;
                     gap: 10px;
-                    
+
                     font-family: var(--font-family);
                     font-style: normal;
                     font-weight: 500;
@@ -502,7 +508,7 @@
 
 .telephone {
 
-    & p{
+    & p {
 
         font-family: var(--font-family);
         font-style: normal;
@@ -515,14 +521,14 @@
 
         color: var(--accent-color);
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 15px;
         }
     }
 }
 
 
-/* Achievement */
+/* Offer */
 
 .offer {
 
@@ -545,6 +551,7 @@
         justify-content: space-between;
         flex-direction: column;
         align-items: flex-start;
+
         & p {
             margin-bottom: 30px;
             font-style: normal;
@@ -558,7 +565,7 @@
         display: flex;
         justify-content: center;
 
-        & > button {
+        &>button {
             background-color: var(--light-color);
             border: none;
             align-items: center;
@@ -599,7 +606,7 @@
         border: 1px solid rgba(78, 75, 72, 0.4);
         box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.11);
         border-radius: 10px;
-        
+
 
         &s {
             display: flex;
@@ -623,19 +630,46 @@
             max-width: 170px;
         }
 
-        &:hover .offer__price-img .heart-svg  path {
+        &:hover .offer__price-img .heart-svg path {
             fill: var(--accent-color);
         }
 
-        &:hover .offer__price-img .graph-svg  path {
+        &:hover .offer__price-img .graph-svg path {
             stroke: var(--accent-color);
         }
     }
 
 
     &__decor {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: rgba(78, 75, 72, 0.4);
+        transition: .3s;
+
+        &:hover {
+            width: 15px;
+            height: 15px;
+            background-color: var(--accent-color);
+        }
+
+        &:focus {
+            width: 15px;
+            height: 15px;
+            background-color: var(--accent-color);
+        }
+
+        &s {
+
+            height: 20px;
+            width: 100%;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
         &-img {
-            max-width:200px;
+            max-width: 200px;
             border-radius: 10px;
             padding: 7px;
             display: flex;
@@ -692,8 +726,7 @@
 
     }
 
-    &__footer {
-    }
+    &__footer {}
 
 }
 
@@ -701,7 +734,7 @@
 
 /* Car */
 
-.car{
+.car {
     &__container {
         margin: 0 auto;
         margin-top: 10%;
@@ -719,10 +752,11 @@
         background-color: #141414;
         border: 3px solid #DB3138;
         transform: rotate(-45deg);
-    
-        & img{
+
+        & img {
             transform: rotate(45deg);
         }
+
         &:hover {
             cursor: pointer;
         }
@@ -750,11 +784,11 @@
         font-weight: 600;
         font-size: 100%;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-    
+
         background-color: var(--accent-color);
     }
 }
@@ -779,7 +813,7 @@
     }
 
     &__decors {
-        margin:6vh  0 3vw 0;
+        margin: 6vh 0 3vw 0;
     }
 
     &__block {
@@ -787,7 +821,7 @@
         align-items: center;
     }
 
-    &__title{
+    &__title {
         margin-left: 3%;
         font-family: var(--font-family);
         font-style: normal;
@@ -819,7 +853,7 @@
 
 /* Scroll-bar */
 
-.scroll-bar{
+.scroll-bar {
     &__text {
         max-width: 70%;
         font-family: var(--font-family);
@@ -827,11 +861,11 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-    
+
     }
 
     &__content {
@@ -843,7 +877,7 @@
 
 /* Our-services */
 
-.our-services{
+.our-services {
     &__container {
         margin-top: 18%;
     }
@@ -852,13 +886,13 @@
         margin-bottom: 5%;
         display: flex;
         justify-content: center;
-    
+
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 600;
         font-size: 52px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -869,7 +903,7 @@
         justify-content: center;
         margin-top: 4%;
         gap: 4%;
-    
+
         &:nth-child(2) {
             background-color: #141414;
         }
@@ -889,8 +923,8 @@
         flex-direction: column;
         gap: 30px;
         border: 1px solid #898989;
-    
-        & img{
+
+        & img {
             margin-top: 60px;
         }
     }
@@ -901,7 +935,7 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -914,7 +948,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -926,14 +960,14 @@
 .card__button {
     max-width: 93px;
     margin-bottom: 50px;
-    
-    & a{
+
+    & a {
         font-family: var(--font-family);
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -956,7 +990,7 @@
         font-weight: 600;
         font-size: 52px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -966,27 +1000,27 @@
         margin-top: 60px;
         margin-bottom: 80px;
     }
-    
+
     &__images {
         display: flex;
         align-items: center;
         flex-direction: column
     }
-    
+
     &__frame {
         display: flex;
         align-items: center;
         justify-content: center;
         align-content: center;
         flex-direction: row;
-    
-        & img{
+
+        & img {
             display: inline-block;
             width: 16.49vw;
             min-height: 20vh;
         }
     }
-    
+
     &__frame:nth-child(2) {
         flex-direction: row-reverse;
         justify-content: flex-end
@@ -1006,7 +1040,7 @@
         font-weight: 600;
         font-size: 52px;
         line-height: 140%;
-    
+
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -1025,21 +1059,21 @@
         justify-content: space-between;
         gap: 2%;
     }
-    
+
     &__placeholder {
         display: block;
         width: 50%;
         padding: 10px 20px;
         border: 1px solid #898989;
     }
-    
+
     &__question {
         max-height: 150px;
         display: flex;
         justify-content: space-between;
     }
-    
-    
+
+
     &__placeholder-question {
         display: block;
         align-items: flex-start;
@@ -1055,16 +1089,16 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     &__contacts {
         display: flex;
-    
+
         & a:not(:last-child) {
             margin-right: 30px;
         }
@@ -1078,7 +1112,7 @@
     justify-content: space-between;
     flex-direction: column;
 
-    & img{
+    & img {
         padding: 10px;
         border: 1px solid #898989;
     }
@@ -1109,29 +1143,29 @@
         justify-content: space-between;
         margin: 30px 0;
     }
-    
+
     &__text {
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 140%;
-    
+
         letter-spacing: 0.05em;
         text-transform: uppercase;
-    
+
         opacity: 0.5;
     }
-    
+
     &__nav {
         display: flex;
         gap: 20px;
-    
-        & li{
+
+        & li {
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 120%;
-        
+
             text-align: center;
             letter-spacing: 0.03em;
         }

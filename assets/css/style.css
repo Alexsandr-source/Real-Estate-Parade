@@ -407,7 +407,7 @@
   margin-bottom: 15px;
 }
 
-/* Achievement */
+/* Offer */
 .offer__container {
   margin-top: 140px;
 }
@@ -496,6 +496,30 @@
 }
 .offer__block:hover .offer__price-img .graph-svg path {
   stroke: var(--accent-color);
+}
+.offer__decor {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(78, 75, 72, 0.4);
+  transition: 0.3s;
+}
+.offer__decor:hover {
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-color);
+}
+.offer__decor:focus {
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-color);
+}
+.offer__decors {
+  height: 20px;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
 }
 .offer__decor-img {
   max-width: 200px;
