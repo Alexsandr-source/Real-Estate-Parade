@@ -564,56 +564,11 @@
   font-size: 16px;
   line-height: 120%;
 }
-/* Car */
-.car__container {
-  margin: 0 auto;
-  margin-top: 10%;
+/* Ыervices */
+.services__container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
 }
-.car__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: #141414;
-  border: 3px solid #DB3138;
-  transform: rotate(-45deg);
-}
-.car__button img {
-  transform: rotate(45deg);
-}
-.car__button:hover {
-  cursor: pointer;
-}
-.car__content {
-  max-width: 80%;
-  display: flex;
-  gap: 5%;
-}
-.car__block {
-  display: inline;
-  max-height: 23vw;
-}
-.car__info {
-  position: relative;
-  bottom: 40px;
-  margin: 0 auto;
-  padding: 2% 1%;
-  width: 77%;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 100%;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-}
-
 /* Our-advantages */
 .our-advantages__container {
   display: flex;
