@@ -565,10 +565,68 @@
   line-height: 120%;
 }
 /* Ыervices */
-.services__container {
+.service__container {
+  margin-top: 150px;
+  gap: 80px;
   display: flex;
   flex-direction: column;
 }
+.service__title {
+  margin-left: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  /* or 43px */
+  text-transform: uppercase;
+}
+.service__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.service__block-img {
+  max-width: 50%;
+  display: flex;
+}
+.service__block-img p {
+  position: relative;
+  right: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: rgba(78, 75, 72, 0.2);
+}
+.service__block-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 35%;
+}
+.service__block-content h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.service__block-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+.service__block-content a span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: underline;
+}
+
 /* Our-advantages */
 .our-advantages__container {
   display: flex;
