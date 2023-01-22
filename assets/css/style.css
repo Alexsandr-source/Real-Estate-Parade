@@ -584,10 +584,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 70px;
+  gap: 80px;
+  margin-right: 19px;
+}
+.service__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.service__blocks .service__block:nth-child(2n) {
+  margin-right: 19px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .service__block-img {
-  max-width: 50%;
   display: flex;
 }
 .service__block-img p {

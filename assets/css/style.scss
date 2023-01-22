@@ -756,13 +756,31 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 70px;
-        &s {
+        gap: 80px;
+        margin-right: 19px;
 
+        &s {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+
+            & .service__block:nth-child(2n) {
+                .service__block-img {
+
+                    & p {
+
+                    }
+
+                }
+
+                margin-right: 19px;
+                display: flex;
+                flex-direction: row-reverse;
+            }
         }
 
         &-img {
-            max-width: 50%;
+            
             display: flex;
 
             & p {
