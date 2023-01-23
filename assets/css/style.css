@@ -593,9 +593,13 @@
   gap: 60px;
 }
 .service__blocks .service__block:nth-child(2n) {
-  margin-right: 19px;
+  margin-left: 19px;
   display: flex;
   flex-direction: row-reverse;
+}
+.service__blocks .service__block:nth-child(2n) .service__block-img p {
+  position: relative;
+  left: 70px;
 }
 .service__block-img {
   display: flex;
