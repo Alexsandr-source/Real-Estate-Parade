@@ -916,30 +916,32 @@
 
 }
 
-/* Scroll-bar */
+/* Startwork */
 
-.scroll-bar {
-    &__text {
-        max-width: 70%;
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
+.startwork {
+    &__container {
+        margin-top: 150px;
+        display: flex;
 
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-
+        & img {
+            max-width: 45%;
+        }
     }
 
     &__content {
-        margin-top: 5vw;
-        display: flex;
-        justify-content: space-between;
+        background-color: var(--accent-color);
+    }
+
+    
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 120%;
+        text-transform: uppercase;
     }
 }
-
 /* Our-services */
 
 .our-services {
