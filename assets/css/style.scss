@@ -748,7 +748,7 @@
 
 }
 
-/* Ыervices */
+/* Services */
 
 .service {
     &__container {
@@ -857,62 +857,63 @@
 
 }
 
-/* Our-advantages */
+/* Works */
 
-.our-advantages {
-    &__container {
-        display: flex;
-        gap: 10%;
-        margin-top: 10%;
-    }
-
-    &__colum {
-        display: flex;
-        flex-direction: column;
-        max-width: 45%;
-    }
-
-    &__info {
-        max-width: 80%;
-    }
-
-    &__decors {
-        margin: 6vh 0 3vw 0;
-    }
+.work {
 
     &__block {
+        gap: 20px;
+        max-width: 324px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &s {
+            display: flex;
+            gap: 60px;
+        }
+
+        & button {
+            max-width: 220px;
+            a{
+            padding: 14px 10px;
+            }
+        }
+        
     }
 
-    &__title {
-        margin-left: 3%;
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 140%;
+    &__line {
+        height: 2px;
 
-        letter-spacing: 0.05em;
+        background-color: #4E4B48;
+        opacity: 0.2;
+    }
+
+    &__decor {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
         text-transform: uppercase;
+        color: #4E4B48;
+        opacity: 0.2;
+    }
+
+    &__block-title {
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
     }
 
     &__text {
-        margin-top: 5%;
-        font-family: var(--font-family);
         font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 120%;
-
-        letter-spacing: 0.03em;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
     }
 
-    &__scroll-bar {
-        display: flex;
-        flex-direction: column;
-        max-width: 45%;
-    }
 }
 
 /* Scroll-bar */
