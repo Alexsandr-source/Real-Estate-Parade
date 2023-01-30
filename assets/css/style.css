@@ -8,6 +8,14 @@
   stroke: var(--accent-color);
 }
 
+.decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.decor-1 {
+  bottom: -15px;
+}
 .content__title {
   display: flex;
   justify-content: space-between;
@@ -912,14 +920,6 @@
   padding: 16px 15px;
   border: 1px solid rgba(78, 75, 72, 0.6);
   border-radius: 5px;
-}
-.MortgageCalculator__main-content img {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-.MortgageCalculator__main-content img:nth-child(1) {
-  bottom: -100px;
 }
 /* Card */
 .card__button {
