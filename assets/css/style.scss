@@ -12,6 +12,24 @@
     }
 }
 
+.decor {
+    &-1 {
+
+    }
+
+    &-2{
+
+    }
+
+    &-3{
+
+    }
+    
+    &-4{
+
+    }
+}
+
 // Content
 
 .content {
@@ -1065,27 +1083,29 @@
 .MortgageCalculator {
 
     &__container{
-
+        margin-top: 150px;
     }
 
     &__header{
-        margin: 150px 0px 80px 0px;
+        gap: 52px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__title{
+        margin-bottom: 80px;
 
         font-style: normal;
         font-weight: 500;
         font-size: 36px;
         line-height: 120%;
         text-transform: uppercase;
-    }
-
-    &__content{
-
-    }
-
-    &__title{
-        gap: 52px;
-        display: flex;
-        justify-content: flex-start;
     }
 
     &__block {
@@ -1163,7 +1183,34 @@
         }
     }
 
+    &__main {
+        &-block {
+    
+        }
+        &-text {
 
+        }
+        &-content {
+            position: relative;
+            max-width: 500px;
+            padding: 16px 15px;
+
+            border: 1px solid rgba(78, 75, 72, 0.6);
+            border-radius: 5px;
+
+            & img{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                &:nth-child(1) {
+                    bottom: -100px;
+                }
+            }
+        }
+        &-title {
+
+        }
+    }
 }
 
 /* Card */

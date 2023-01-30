@@ -824,18 +824,26 @@
 }
 
 /* MortgageCalculator */
+.MortgageCalculator__container {
+  margin-top: 150px;
+}
 .MortgageCalculator__header {
-  margin: 150px 0px 80px 0px;
+  gap: 52px;
+  display: flex;
+  justify-content: flex-start;
+}
+.MortgageCalculator__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.MortgageCalculator__title {
+  margin-bottom: 80px;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 120%;
   text-transform: uppercase;
-}
-.MortgageCalculator__title {
-  gap: 52px;
-  display: flex;
-  justify-content: flex-start;
 }
 .MortgageCalculator__block {
   max-width: 230px;
@@ -898,7 +906,21 @@
 .MortgageCalculator__row-choice > button:hover img {
   transform: rotate(0deg);
 }
-
+.MortgageCalculator__main-content {
+  position: relative;
+  max-width: 500px;
+  padding: 16px 15px;
+  border: 1px solid rgba(78, 75, 72, 0.6);
+  border-radius: 5px;
+}
+.MortgageCalculator__main-content img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.MortgageCalculator__main-content img:nth-child(1) {
+  bottom: -100px;
+}
 /* Card */
 .card__button {
   max-width: 93px;
