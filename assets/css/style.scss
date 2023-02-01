@@ -98,6 +98,44 @@
     }
 }
 
+// Block
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & hr {
+        border: 1px solid #A4D233;
+        filter: blur(3px);
+    }
+
+    &-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        background-color: rgba(164, 210, 51, 0.2);
+        border-radius: 10px;
+
+        &-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &-text {
+            display: flex;
+            & span {
+                height: 30px;
+                color: #FA4616;
+            }
+        }
+    }
+
+}
+
 // Button
 
 .button {
@@ -1228,11 +1266,19 @@
     }
 
     &__main {
+        display: flex;
+        gap: 100px;
+    }
+
+    &__colum1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         &-block {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            max-width: 583px;
+            width: 583px;
         }
 
         &-text {
@@ -1249,7 +1295,6 @@
             position: relative;
             max-width: 583px;
             padding: 16px 15px;
-
             border: 1px solid rgba(78, 75, 72, 0.6);
             border-radius: 5px;
         }
@@ -1266,35 +1311,121 @@
             display: flex;
             justify-content: space-between;
         }
+    }
 
-        &-colum1 {
+    &__colum2 {
+        width: 600px;
+        position: relative;
+        top: -18px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-colum {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 44px;
         }
 
-        &-colum2 {
-            
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: rgba(20, 20, 20, 0.6);
+        }
+
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &-button {
+            & a {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        &-info {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
         }
     }
 }
 
-/* Card */
+/* Blog */
 
-.card__button {
-    max-width: 93px;
-    margin-bottom: 50px;
+.blog {
+    &__container {
+        margin-top: 150px;
+    }
 
-    & a {
-        font-family: var(--font-family);
+    &__colum {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 583px;
+        padding-right: 200px;
+        border-right:  2px solid var(--accent-color);
+    }
+
+    &__colum2 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 583px;
+        padding: 100px;
+        border-right:  2px solid var(--accent-color);
+    }
+
+
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
         font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 140%;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 120%;
+        /* or 43px */
 
-        text-align: center;
-        letter-spacing: 0.05em;
         text-transform: uppercase;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    // &__repost {
+
+    // }
+
+    &__button {
+        padding: 10px;
+        margin: 4px;
+        background: rgba(238, 255, 197, 0.6);
+        border: 1px solid rgba(78, 75, 72, 0.2);
+        border-radius: 10px;
     }
 }
 
