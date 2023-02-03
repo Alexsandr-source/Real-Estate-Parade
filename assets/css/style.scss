@@ -1159,7 +1159,6 @@
     }
 }
 
-
 /* MortgageCalculator */
 
 .MortgageCalculator {
@@ -1453,142 +1452,112 @@
     }
 }
 
-/* Our-work */
-
-.our-work {
-    &__container {
-        margin-top: 180px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__title {
-        display: flex;
-        margin: 0 auto;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 52px;
-        line-height: 140%;
-
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    &__decors {
-        margin-top: 60px;
-        margin-bottom: 80px;
-    }
-
-    &__images {
-        display: flex;
-        align-items: center;
-        flex-direction: column
-    }
-
-    &__frame {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        flex-direction: row;
-
-        & img {
-            display: inline-block;
-            width: 16.49vw;
-            min-height: 20vh;
-        }
-    }
-
-    &__frame:nth-child(2) {
-        flex-direction: row-reverse;
-        justify-content: flex-end
-    }
-}
-
 // Footer
 
 .footer {
-    margin-top: 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 150px;
+    &__container {
+        
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__colum {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        &s {
+            display: flex;
+            gap: 80px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            max-width: 294px;
+            margin-left: 200px;
+        }
+    }
+
+    &__number {
+        width: 295px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
 
     &__title {
         font-style: normal;
-        font-weight: 600;
-        font-size: 52px;
-        line-height: 140%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
 
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-}
-
-// Socials-networks
-
-.socials-networks {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    & img {
-        padding: 10px;
-        border: 1px solid #898989;
-    }
-}
-
-// Info__link
-
-.info__link {
-    display: flex;
-    gap: 10px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-// last-line
-
-.last-line {
-    margin-top: 100px;
-    border-top: 1px solid #898989;
-
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 0;
-    }
-
-    &__text {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 140%;
-
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-
-        opacity: 0.5;
-    }
-
-    &__nav {
-        display: flex;
-        gap: 20px;
-
-        & li {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 120%;
-
-            text-align: center;
-            letter-spacing: 0.03em;
+        &s {
+            margin-top: 37px;
         }
+    }
+
+    &__link {
+        &s {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 24px;
+
+            &-info {
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                gap: 16px;
+                width: 261px;
+            }
+        }
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    &__mail {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: underline;
+    }
+
+    &__addres {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: right;
+        text-decoration-line: underline;
     }
 }
