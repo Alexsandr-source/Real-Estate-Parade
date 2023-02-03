@@ -1560,4 +1560,13 @@
         text-align: right;
         text-decoration-line: underline;
     }
+
+    &__text {
+        margin-top: 80px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(20, 20, 20, 0.6);
+    }
 }
