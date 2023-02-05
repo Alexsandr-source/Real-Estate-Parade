@@ -58,6 +58,10 @@
   left: 0;
 }
 
+.arrow {
+  min-width: 13px;
+}
+
 .content__title {
   display: flex;
   justify-content: space-between;
@@ -106,7 +110,6 @@
   height: 30px;
   color: #FA4616;
 }
-
 .button {
   background: var(--accent-color);
   transition: 0.4s;
@@ -140,6 +143,9 @@
   margin-top: 40px;
   width: 100%;
 }
+.header__logo {
+  max-height: 50px;
+}
 .header__container {
   margin: auto 4%;
 }
@@ -158,6 +164,12 @@
   font-size: 24px;
   line-height: 29px;
 }
+@media screen and (max-width: 1440px) {
+  .header__info a {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 .header__info p {
   font-style: normal;
   font-weight: 400;
@@ -167,11 +179,28 @@
 }
 .header__interactive {
   display: flex;
+  align-items: center;
   gap: 1vw;
+}
+@media screen and (max-width: 1440px) {
+  .header__interactive {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
 }
 .header__interactive img {
   width: 30px;
   cursor: pointer;
+}
+.header__svg {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .header__item {
+    margin-top: 20px;
+    font-size: 16px;
+  }
 }
 .header__item:hover > ul {
   display: block;
@@ -235,6 +264,11 @@
   line-height: 22px;
   color: var(--text-color);
 }
+@media screen and (max-width: 1440px) {
+  .header__link {
+    font-size: 16px;
+  }
+}
 .header__link P {
   font-family: var(--font-family);
   font-style: normal;
@@ -259,6 +293,9 @@
   line-height: 22px;
   color: var(--text-color);
 }
+.header__burger {
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -268,6 +305,11 @@
   display: flex;
   align-items: center;
   gap: 1vw;
+}
+@media screen and (max-width: 1440px) {
+  .menu__drop {
+    align-items: flex-start;
+  }
 }
 .menu__burger {
   display: none;
@@ -335,6 +377,7 @@
   bottom: 300px;
   max-height: 300px;
   max-width: 40%;
+  z-index: -999;
 }
 .intro__images-2 {
   position: relative;
@@ -565,7 +608,7 @@
 .offer__block {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 36%;
   position: relative;
   border: 1px solid rgba(78, 75, 72, 0.4);
   box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.11);
@@ -1234,7 +1277,7 @@
   text-decoration-line: underline;
 }
 .footer__text {
-  margin-top: 80px;
+  margin: 80px 0px 30px 0px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

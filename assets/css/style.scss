@@ -74,6 +74,12 @@
     }
 }
 
+// Arrow
+
+.arrow {
+    min-width: 13px;
+}
+
 // Content
 
 .content {
@@ -134,6 +140,9 @@
         }
     }
 
+    &__header {
+
+    }
 }
 
 // Button
@@ -178,13 +187,15 @@
     margin-top: 40px;
     width: 100%;
 
-    &__container {
+    &__logo {
+        max-height: 50px;
+    }
 
+    &__container {
         margin: auto 4%;
     }
 
     &__menu {
-
         display: flex;
         justify-content: space-between;
     }
@@ -199,7 +210,10 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
-
+            @media screen and (max-width: 1440px) {
+                margin-top: 20px;
+                font-size: 16px;
+            }
         }
 
         & p {
@@ -207,15 +221,21 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-
             opacity: 0.8;
+
+            
         }
     }
 
     &__interactive {
-
         display: flex;
+        align-items: center;
         gap: 1vw;
+
+        @media screen and (max-width: 1440px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
 
         & img {
             width: 30px;
@@ -223,7 +243,16 @@
         }
     }
 
+    &__svg {
+        display: flex;
+        gap: 20px;
+    }
+
     &__item {
+        @media screen and (max-width: 1440px) {
+            margin-top: 20px;
+            font-size: 16px;
+        }
         &:hover {
             &>ul {
                 display: block;
@@ -300,6 +329,10 @@
         line-height: 22px;
         color: var(--text-color);
 
+        @media screen and (max-width: 1440px) {
+            font-size: 16px;
+        }
+
         & P {
             font-family: var(--font-family);
             font-style: normal;
@@ -328,6 +361,10 @@
         line-height: 22px;
         color: var(--text-color);
     }
+
+    &__burger {
+        display: none;
+    }
 }
 
 .menu {
@@ -338,6 +375,9 @@
         display: flex;
         align-items: center;
         gap: 1vw;
+        @media screen and (max-width: 1440px) {
+            align-items: flex-start;
+        }
     }
 
     &__burger {
@@ -421,6 +461,7 @@
             bottom: 300px;
             max-height: 300px;
             max-width: 40%;
+            z-index: -999;
         }
 
         &-2 {
@@ -721,7 +762,7 @@
     &__block {
         display: flex;
         flex-direction: column;
-        width: 360px;
+        width: 36%;
         position: relative;
         border: 1px solid rgba(78, 75, 72, 0.4);
         box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.11);
@@ -1562,7 +1603,7 @@
     }
 
     &__text {
-        margin-top: 80px;
+        margin: 80px 0px 30px 0px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
